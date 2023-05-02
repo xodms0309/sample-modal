@@ -1,13 +1,5 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyModal from './Modal';
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+ReactDOM.render(<MyModal />, document.getElementById('root'));

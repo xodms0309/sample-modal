@@ -1,12 +1,16 @@
 {
-  "name": "react",
-  "version": "1.0.0",
-  "description": "React example starter project",
+  "name": "simple-sample-modal",
+  "version": "0.0.2",
+  "description": "간단한 모달 라이브러리",
   "keywords": [
-    "react",
-    "starter"
+    "modal"
   ],
-  "main": "src/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "main": "dist/index.js",
   "dependencies": {
     "loader-utils": "3.2.1",
     "react": "18.2.0",
@@ -14,19 +18,34 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
     "@babel/runtime": "7.13.8",
+    "cross-env": "^7.0.3",
     "typescript": "4.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "rm -rf dist && mkdir dist"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xodms0309/sample-modal.git"
+  },
+  "author": "Taeeun Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xodms0309/sample-modal/issues"
+  },
+  "homepage": "https://github.com/xodms0309/sample-modal#readme"
 }
