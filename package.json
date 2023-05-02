@@ -1,16 +1,12 @@
 {
   "name": "simple-sample-modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "간단한 모달 라이브러리",
   "keywords": [
     "modal"
   ],
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
-  "main": "dist/index.js",
+  "module": "dist/Modal.js",
+  "main": "dist/Modal.js",
   "dependencies": {
     "loader-utils": "3.2.1",
     "react": "18.2.0",
@@ -30,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepare": "rm -rf dist && mkdir dist"
+    "publish:npm": "rm -rf dist && mkdir dist && babel src -d dist --copy-files"
   },
   "browserslist": [
     ">0.2%",
